@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title> Фильтр товаров</title>
+</head>
+<body>	
+
+<div id="app">
+	<span >{{mes}}</span>
+  
+</div>
+<div id="app-2">
+  <span v-bind:class="me1212">
+    Hover your mouse over me for a few seconds
+    to see my dynamically bound title!
+  </span>
+  <a v-bind:href="href">{{message}}</a>
+
+</div>
+  <div id="app3">
+  	<span v-if="seen">Это правда</span>
+  </div>
+
+
+
+  <div id="app4">
+  	<ul>
+  		<li v-for="todo in todos">
+  			{{todo.text}}
+  		</li>
+  	</ul>
+  </div>
+<script src="script.js"></script>
+</html>
+
